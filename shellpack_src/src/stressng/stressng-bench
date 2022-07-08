@@ -38,6 +38,12 @@ io-class)
 io-class-parallel)
 	TESTSWITCH="--class io --all 1"
 	;;
+udp)
+	TESTSWITCH="--udp"
+	;;
+udp-flood)
+	TESTSWITCH="--udp-flood"
+	;;
 *)
 	die "Unrecognised test $STRESSNG_TESTNAME"
 	;;
